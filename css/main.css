@@ -164,14 +164,15 @@ nav {
 }
 #know {
     text-align: center;
-    margin: 30px 25px 35px 25px;
-    color: var(--text);
+    margin: 30px 25px 15px 25px;
+    color: var(--background);
     font-size: 45px;
 }
 .about-me h3 {
     font-size: 30px;
     color: var(--lighter-purp);
     margin-bottom: 15px;
+    padding-top: 15px;
 }
 .col-sm {
     min-width: 200px;
@@ -445,10 +446,10 @@ button:hover, button:hover > input[type=submit] {
         font-size: 32px;
     }
     .about-me h3 {
-        font-size: 22px;
+        font-size: 26px;
     }
     li {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .about-write {
