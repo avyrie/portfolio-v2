@@ -2,6 +2,8 @@
     --pink-white: rgb(255, 253, 255);
     --background: rgb(137, 12, 148);
     --footer-back: rgba(109, 1, 109, 0.6); 
+    --text: rgb(102, 66, 117);
+    --lighter-purp: rgba(163, 27, 163);
 }
 
 * {
@@ -16,8 +18,10 @@ body {
     width: 100%;
 }
 
-
+/* ---------------------------------- */
 /* ----------- Side Panel ----------- */
+/* ---------------------------------- */
+
 .panel {
     position: fixed;
     left: 0;
@@ -35,6 +39,11 @@ body {
     margin: 0 auto;
     margin-top: 15px;
 }
+#home-link {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
 .panel h1, .panel h2 {
     text-align: center;
     font-family: sans-serif;
@@ -48,18 +57,23 @@ body {
 }
 .panel h2 {
     font-size: 25px;
-    padding: 10px;
+    padding: 10px 10px 0px 10px;
 }
 
+/* ---------------------------------------- */
 /* ----------- Panel Navigation ----------- */
+/* ---------------------------------------- */
+
 nav {
     margin-left: 40px;
-    margin-top: 30px;
 }
 .topnav {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+}
+.topnav a.icon {
+    visibility: hidden;
 }
 .topnav a {
     color: var(--pink-white);
@@ -73,17 +87,18 @@ nav {
     background: var(--pink-white);
 }
 
+/* ----------------------------- */
 /* ----------- About ----------- */
+/* ----------------------------- */
+
 .about {
     display: flex;
     flex-direction: column;
-    /* display: inline-block; */
-    /* justify-content: space-between; */
     position: relative;
     width: 82%;
-    /* max-width: 82%; */
     float: right;
     overflow: hidden;
+    min-width: 550px;
 }
 .hero {
     display: flex;
@@ -111,36 +126,38 @@ nav {
     font-size: 250px;
     font-family: 'Marck Script', cursive;
     line-height: 50%;
-    /* margin: 35% 0 90px 0; */
 }
 .hero h3 {
     font-family: 'Marck Script', cursive;
     font-size: 65px;
 }
 
-
+/* -------------------------------- */
 /* ----------- About Me ----------- */
+/* -------------------------------- */
+
 .about-me {
     width: 100%;
     text-align: left;
     margin: 30px 0;
     color: var(--background);
 }
-.about-me h1 {
+.about-me h1, .projects h1 {
     font-size: 70px;
     padding-left: 60px;
     text-decoration: underline;
     padding-left: 10%;
+    color: var(--background);
 }
 #know {
     text-align: center;
     margin: 50px 25px 35px 25px;
-    color: rgb(128, 35, 156);
+    color: var(--text);
     font-size: 50px;
 }
 .about-me h3 {
     font-size: 35px;
-    color: rgba(163, 27, 163);
+    color: var(--lighter-purp);
     margin-bottom: 15px;
 }
 .col-sm {
@@ -154,6 +171,7 @@ nav {
 }
 li {
     font-size: 25px;
+    color: var(--text);
 }
 #html {
     list-style-image: url(../images/HTML5_logo.png);
@@ -171,12 +189,123 @@ li {
     list-style-image: url(../images/sql-icon.png);
 }
 
+.about-write, .about-left {
+    display: flex;
+    margin: 0 45px;
+}
+
+.about-write img, .about-left img  {
+    height: 50vh;
+    margin: 0 15px 15px 15px;
+    min-height: 200px;
+}
+.about-write p, .about-left p{
+    font-size: 20px;
+    color: var(--text);
+    margin-top: 30px;
+}
+.paragraphs strong:hover {
+    cursor: pointer;
+    color: var(--background);
+    text-decoration: underline;
+}
+
+/* -------------------------------- */
+/* ----------- Projects ----------- */
+/* -------------------------------- */
+
+.project-wrap {
+    padding-left: 6%;
+}
+.proj-img {
+    display: inline-block;
+    width: 30vw;
+    padding: 15px;
+}
+.tama {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 25px;
+    display: flex;
+    transition: .5s;
+    margin: auto;
+    width: 100vw;
+    overflow: auto;
+}
+.tama a:hover {
+    opacity: 1;
+    transform: scale(1.10);
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.tama h5 {
+    margin: auto 0;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    color: var(--lighter-purp);
+}
+.proj-links {
+    display: block;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.colon {
+    text-decoration: underline;
+}
+button {
+    color: white;
+    background: var(--lighter-purp);
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-top: 20px; 
+    border-color: var(--background);
+}
+button:hover {
+    color: var(--lighter-purp);
+    background: var(--pink-white);
+}
+
+
+/*
+
+
+
+a {
+    color: rgba(163, 27, 163, 0.9);
+}
+
+
+
+
+
+
+
+h6 {
+    padding-bottom: 10px;
+    word-break: break-all;
+}
+
+#collab-proj, #pet-proj, #tama-proj, #wayfarer {
+    padding-top: 20px;
+} */
+
+/* ------------------------------------- */
 /* ----------- Media Queries ----------- */
+/* ------------------------------------- */
+
 @media screen and (max-width: 1020px) {
     .panel {
         flex-direction: row;
+        position: fixed;
         height: 100px;
         width: 100%;
+        overflow: visible;
     }
     .panel h1, .panel h2 {
         display: none;
@@ -185,49 +314,61 @@ li {
         width: 100px;
         margin: 0 auto;
         margin-left: 15px;
+        margin-right: 0;
         padding: 5px;
     }
+    #home-link {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
+    nav, nav a {
+        position: relative;
+    }
+    nav {
+        margin-top: 30px;
+    }
     .topnav a {
         display: none;
     }
+    .topnav .icon {
+        float: left;
+        display: block;
+    }
     .topnav a.icon {
-      /* float: right; */
-      display: block;
-      background: rgba(163, 27, 163, 0.01);
+        visibility: visible;
     }
-    i {
-        color: white;
+    .topnav .icon:hover {
+        background-color: var(--background);
+        color: var(--pink-white);
     }
-    .clickburger {
-        color: rgba(163, 27, 163);
-    }
-
-    .topnav {
-        /* justify-content: right;  */
-    }
-    /* .topnav a {
-      width: 100%;
-    } */
-    
+  
     .topnav.responsive {
+        background-color: var(--pink-white);
+        width: 150px;
         display: flex;
         flex-direction: column;
         position: relative;
         padding-left: 0;
-      }
+        border: 2px solid rgb(137, 12, 148);
+        border-radius: 20px;
+    }
     .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+        color: var(--background);
+        padding-bottom: 15px;
     }
     .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
+        color: var(--background);
+        display: block;
     }
-    .topnav.responsive a {
-      padding-left: 40px;
+    .topnav.responsive a:hover {
+        background-color: var(--background);
+        color: var(--pink-white);
+    }
+    .topnav.responsive .icon:hover {
+        background-color: var(--pink-white);
+        color: var(--background);
+        border-radius: 20px;
     }
 
     .about {
@@ -237,7 +378,7 @@ li {
     .hero h1 {
         font-size: 160px;
     }
-    .about-me h1 {
+    .about-me h1, .projects h1 {
         font-size: 45px;
     }
     .col-sm {
@@ -253,9 +394,33 @@ li {
     li {
         font-size: 16px;
     }
-}
-@media screen and (max-width: 730px) {
 
+    .about-write {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-left {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .about-write img {
+        min-height: 200px;
+    }
+}
+
+@media screen and (max-width: 542px) {
+    .hero h1 {
+        font-size: 120px;
+    }
+    .hero h3 {
+        font-size: 48px;
+    }
+    .about-me, .paragraphs, .about-left p, .projects {
+        padding-left: 40px;
+    }
+    .tama h5 {
+        flex-direction: column;
+    }
 }
 
 
