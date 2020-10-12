@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <!-- Favicon -->
+        <link rel="icon" href="./images/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Bootstrap -->
         <!-- CSS only  -->
@@ -42,9 +44,9 @@
                 </div>
                
                 <div class="link-icons">
-                    <i class="fab fa-github"></i>
-                    <i class="far fa-envelope"></i>
-                    <i class="fab fa-linkedin"></i>
+                    <a href="https://github.com/avyrie"><i class="fab fa-github"></i></a>
+                    <a href = "mailto: pittman.ally@gmail.com"><i class="far fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/allison-pittman/"><i class="fab fa-linkedin"></i></a>
                 </div>
           
             </nav>
@@ -237,23 +239,31 @@
             </section>
             <hr>
 
-            <h1 id="contact" class="contact-title">Let's Connect!</h1>
-            <div class="container">
-                <form action="action_page.php">
-              
-                  <label for="fname">First Name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your first name...">
-              
-                  <label for="lname">Last Name</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name...">
-              
-                  <label for="subject">Subject</label>
-                  <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
-              
-                  <button><input type="submit" value="Submit"></button>
-              
-                </form>
-              </div>
+            <div class="contact-form">
+                <h1 id="contact" class="contact-title">Let's Connect!</h1>
+                <div class="contact-icons">
+                    <a href="https://github.com/avyrie"><i class="fab fa-github"></i></a>
+                    <a href = "mailto: pittman.ally@gmail.com"><i class="far fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/allison-pittman/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="container">
+                    <form action="mailto:pittman.ally@gmail.com?subject=Reaching out through your portfolio site" method="post" enctype="text/plain">
+                  
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="First Name " placeholder="Your first name...">
+                    
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="Last Name " placeholder="Your last name...">
+
+                        <label for="message">Message</label>
+                        <textarea name="Message " id="message" size="300" placeholder="Write something..." style="height:200px"></textarea>
+                  
+                    <button><input type="submit" value="Send"></button>
+
+                    </form>
+                  </div>
+                  
+            </div>
 
         </section> 
             

@@ -89,13 +89,13 @@ nav {
 }
 .link-icons {
     position: fixed;
-    color: var(--pink-white);
     bottom: 0;
     left: 15px;
 }
 .link-icons i {
     padding: 10px;
-    font-size: 25px;;
+    font-size: 25px;
+    color: var(--pink-white);
 }
 
 /* ----------------------------- */
@@ -153,12 +153,14 @@ nav {
     margin: 30px 0;
     color: var(--background);
 }
-.about-me h1, .projects h1 {
+.about-me h1, .projects h1, .contact-title, .contact-icons {
     font-size: 50px;
+    font-family: 'Marck Script', cursive;
     padding-left: 60px;
     text-decoration: underline;
     padding-left: 10%;
     color: var(--background);
+    margin-top: 25px;
 }
 #know {
     text-align: center;
@@ -261,8 +263,9 @@ li {
 .tama h5 {
     margin: auto 0;
     text-align: center;
-    font-family: 'Kalam', cursive;
+    font-family: 'Marck Script', cursive;
     color: var(--lighter-purp);
+    font-size: 30px;
 }
 .proj-links {
     display: block;
@@ -292,13 +295,19 @@ button:hover {
 /* -------- Contact Form ---------*/
 /* ------------------------------ */
 
-.contact-title {
-    margin: 25px 0px;
-    text-align: center;
-    font-family: 'Marck Script', cursive;
-    font-size: 50px;
+.contact-icons {
+    text-decoration: none;
+    margin-top: 0 !important;
+}
+.contact-icons i {
+    padding: 8px;
     color: var(--lighter-purp);
-    text-decoration: underline;
+}
+.contact-icons i:hover {
+    color: var(--pink-white);
+    border-radius: 15px;
+    background-color: var(--lighter-purp);
+    cursor: pointer;
 }
 input[type=text], select, textarea {
     width: 100%; 
@@ -306,7 +315,7 @@ input[type=text], select, textarea {
     border: 1px solid #d9b3e4; 
     border-radius: 4px; 
     box-sizing: border-box; 
-    margin-top: 6px;
+    /* margin-top: 6px; */
     margin-bottom: 16px;
     resize: vertical 
 }
@@ -455,14 +464,14 @@ button:hover, button:hover > input[type=submit] {
     }
 }
 
-@media screen and (max-width: 542px) {
+@media screen and (max-width: 550px) {
     .hero h1 {
         font-size: 120px;
     }
     .hero h3 {
         font-size: 48px;
     }
-    .about-me, .paragraphs, .about-left p, .projects {
+    .about-me, .paragraphs, .about-left p, .projects, .contact-form {
         padding-left: 40px;
     }
     .tama {
