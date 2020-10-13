@@ -8,6 +8,7 @@ html {
     --footer-back: rgba(109, 1, 109, 0.6); 
     --text: rgb(102, 66, 117);
     --lighter-purp: rgba(163, 27, 163);
+    --header: rgb(39, 213, 219);
 }
 
 * {
@@ -135,15 +136,29 @@ nav {
     flex-direction: column;
     align-items: center;
     position: relative;
-    color: rgb(39, 213, 219);
+    color: var(--header);
     text-align: center;
 }
-.hero h1 {
+.welcome h1 {
     font-size: 250px;
     font-family: 'Marck Script', cursive;
     line-height: 50%;
+    overflow: hidden; 
+    border-right: .08em solid rgb(39, 213, 219); 
+    white-space: nowrap; 
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
 }
-.hero h3 {
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--background); }
+  }
+.welcome h3 {
     font-family: 'Marck Script', cursive;
     font-size: 65px;
 }
