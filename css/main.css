@@ -506,7 +506,11 @@ button:hover, button:hover > input[type=submit] {
         font-size: 40px;
     }
     .about {
-        width: 30vw;
+        /* width: 30vw; */
+        padding-left: 12%;
+    }
+    .link-icons {
+        display: none;
     }
 }
 @media screen and (max-width: 420px) {
@@ -541,6 +545,25 @@ button:hover, button:hover > input[type=submit] {
     }
     .about-write img, .about-left img {
         margin-left: 26%
+    }
+}
+@media screen and (max-width: 280px) {
+    .about {
+        padding-left: 78%;
+        /* padding-right: 22%; */
+    }
+    h5 {
+        padding-right: 50%;
+    }
+    .about-write img, .about-left img {
+        margin-left: 26%;
+        height: 30vh;
+    }
+    .proj-links {
+        padding-left: 0;
+    }
+    .welcome h1, .welcome h3 {
+        padding-left: 15%;
     }
     
 }
