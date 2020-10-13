@@ -240,6 +240,7 @@ li {
 .proj-img {
     display: inline-block;
     width: 30vw;
+    min-width: 250px;
     padding: 15px;
 }
 .tama {
@@ -473,6 +474,11 @@ button:hover, button:hover > input[type=submit] {
     .about-write img {
         min-height: 200px;
     }
+
+    /* Projects */
+    .project-wrap {
+        padding-left: 0;
+    }
 }
 
 
@@ -523,7 +529,7 @@ button:hover, button:hover > input[type=submit] {
 }
 @media screen and (max-width: 375px) {
     .about {
-        padding-left: 33%;
+        padding-left: 38%;
     }
     .about-write img, .about-left img {
         margin-left: 26%
