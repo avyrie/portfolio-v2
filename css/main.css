@@ -87,11 +87,17 @@ nav {
     font-size: 20px;
     padding: 10px;
 }
-.topnav a:hover, .link-icons i:hover {
+.topnav a:hover {
     cursor: pointer;
     background: var(--pink-white);
     color: var(--lighter-purp);
     border-radius: 15px 0 0 15px;
+}
+.link-icons i:hover {
+    cursor: pointer;
+    background: var(--pink-white);
+    color: var(--lighter-purp);
+    border-radius: 15px;
 }
 .link-icons {
     position: fixed;
