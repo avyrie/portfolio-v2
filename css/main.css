@@ -162,7 +162,7 @@ nav {
   }
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: var(--background); }
+    50% { border-color: rgb(12, 1, 15); }
   }
 .welcome h3 {
     font-family: 'Marck Script', cursive;
