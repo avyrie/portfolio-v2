@@ -498,6 +498,53 @@ button:hover, button:hover > input[type=submit] {
     }
 }
 
+@media screen and (max-width: 500px) {
+    .welcome h1 {
+        font-size: 80px;
+    }
+    .welcome h3 {
+        font-size: 40px;
+    }
+    .about {
+        width: 30vw;
+    }
+}
+@media screen and (max-width: 420px) {
+    .about {
+        padding-left: 20%;
+    }
+    .about-write img, .about-left img {
+        margin-left: 16%
+    }
+}
+@media screen and (max-width: 375px) {
+    .about {
+        padding-left: 33%;
+    }
+    .about-write img, .about-left img {
+        margin-left: 26%
+    }
+    
+}
+@media screen and (max-width: 360px) {
+    .about {
+        padding-left: 40%;
+    }
+    .about-write img, .about-left img {
+        margin-left: 16%
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .about {
+        padding-left: 55%;
+    }
+    .about-write img, .about-left img {
+        margin-left: 26%
+    }
+    
+}
+
 /* ------------------------------ */
 /* ----------- Footer ----------- */
 /* ------------------------------ */
