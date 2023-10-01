@@ -222,6 +222,9 @@ li {
 #js {
     list-style-image: url(../images/js-icon.png);
 }
+#ts {
+    list-style-image: url(../images/ts-icon.png);
+}
 #py {
     list-style-image: url(../images/py-icon.png);
 }
